@@ -15,6 +15,15 @@ When to use
 2. If you wanted to extend child class with Singleton and let child to use parent without changing any other codebase.
 
 
+=========
+Use Case
+=========
+
+1. Database connection pool
+2. Thread Pool / Excecutor Service
+3. Driver Manager (To connect with the hardware or software)
+4. Logger => You want only one logging instance writing to a file, console, or system.
+
 ===========
 Advantages
 ===========
