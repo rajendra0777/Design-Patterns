@@ -1,0 +1,44 @@
+Builder Design Pattern
+----------------------
+The Builder Design Pattern is a creational pattern used to construct complex objects step by step. 
+The intent of the Builder Pattern is to separate the construction of a complex object from its representation, so that the same
+construction process can create different representations
+
+Example: Building different types of cars (SUV, Sports Car) using the same steps but different components.
+
+
+
+========
+Problem
+========
+
+1. Class with lot many attributes
+2. Before creating object it requires validation -> age>18, email validate, student with above 60%
+
+
+	- Validation using constructor.
+	- We can also validate in setter but not before object creation.
+	- We can't validate using 2 or more attributes inside setter.
+
+3. Telescoping constuctor(Bad Design).
+4. N Number of constructor will be there.
+5. If class has 20 attributes then it can't be possible to have all combination of constructor
+
+
+============
+When to USE
+============
+
+1. Class with lot many attributes
+2. Immutable object
+3. Object Validation
+4. To seperate construction of complex object from its representation.
+
+
+=========
+Use Case
+=========
+
+1. Setting params in API calls.
+2. Prepare query for DB call.
+3. Constructing Reports or Documents
