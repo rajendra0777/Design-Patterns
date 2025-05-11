@@ -1,0 +1,36 @@
+==========
+Singleton
+==========
+
+The Singleton Pattern ensures that a class has only one instance and provides a global point of access to it
+
+Global Point of access means there should be only one way to access the class getInstance()through it can be accessed.
+
+
+============
+When to use 
+============
+
+1. There must be have one instance of a class and it should be accessible form well known access point.
+2. If you wanted to extend child class with Singleton and let child to use parent without changing any other codebase.
+
+
+===========
+Advantages
+===========
+
+1. Ensure only one object is created and used by everywhere.
+2. Easy to create object using getInstance()
+3. Control over object creation like Eager Initialization or Lazy.
+4. Memory save or resource utilization by avoiding multiple object creation.
+5. Having control over instantiation for Multithreading environment. 
+
+
+=============
+Disadvantages
+=============
+
+1. If implemented strictly then hard to extend or change the singleton.
+2. Violation of SRP if it is having 2 task in a single class like getInstance() and logPrinting()
+3. One test could accidentally affect another by changing the singleton's state.
+
